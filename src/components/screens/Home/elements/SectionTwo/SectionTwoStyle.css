@@ -1,0 +1,38 @@
+.section-two
+{
+   background-color: white;
+   height: 800px;
+   margin-top: 100px;
+}
+
+.title-features
+{
+   font-size: 40px;
+   font-weight: 700;
+   color: rgb(31, 78, 68);
+   text-align: center;
+   letter-spacing: .5px;
+}
+
+.header-section-two
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.items
+{
+   display: block;
+}
+
+.ViewAll
+{
+   font-family: "Raleway", sans-serif;
+   color: black;
+   font-size: 26px;
+}
+
+.cards{display: flex;
+justify-content:space-around;}

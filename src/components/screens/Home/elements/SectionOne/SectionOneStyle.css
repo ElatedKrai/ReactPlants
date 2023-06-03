@@ -1,0 +1,63 @@
+.section-one{
+   color: white;
+   background-color: rgb(31, 78, 68); height: 600px;
+   padding-top:100px;
+}
+
+.left-side-section-one
+{
+   width: 50%;
+   float: left;
+   padding: 0px 0px 0px 0px;
+   margin-left: 30px ;
+}
+
+.right-side-section-one
+{
+   width: 50%;
+   float: right;
+}
+
+.description-section-one
+{
+   margin: 20px 0;
+}
+
+
+.buttons-section-one
+{
+   display: flex;
+   width: 100%;
+   flex-wrap: wrap;
+}
+
+.button-shopnow button
+{ 
+   margin-right:30px;
+   width:160px;
+   float: left;
+   text-align: center;
+   height: 60px;
+   color: #004F44;
+   font-weight: 400;
+}
+
+
+.button-explore-more{
+   width: 50%;
+   float: right;
+   /* centered vertical */
+   display: flex;
+   align-items: center;
+   height: 60px;
+letter-spacing: 2px;
+}
+
+.preSale img
+{
+   /* smooth edge */
+   
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+}

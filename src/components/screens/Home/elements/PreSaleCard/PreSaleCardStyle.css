@@ -1,0 +1,144 @@
+:root {
+   --clr-neutral-900: hsl(207, 19%, 9%);
+   --clr-neutral-100: hsl(0, 0%, 100%);
+   --clr-accent-400: hsl(142, 90%, 61%)
+}
+
+.presalecard {
+   --image: url(../SectionOne/Flower2.webp);
+   color: white;
+   /* цвет текста */
+   background-image:var(--image);
+   /* картинка, на которую накидывается цвет */
+   background-size: cover;
+   /* что-то там*/
+   padding: 15rem 0 0;
+   /* отступ */
+   max-width: 100%;
+   height: 300px;
+   /* максимальная высотка карточки, чтобы она не была слишком широкая*/
+   border-radius: 1rem;
+   /*радиус, чтобы округлить нашу карточку */
+   overflow: hidden;
+   /* чтобы со всех сторон окрулилось */
+   transition: transform 500ms ease;
+   /* анимация */
+}
+
+.presalecard:hover {
+   transform: scale(1.05);
+   /* анимация, когда наводишь  */
+}
+
+.presalecard-content {
+   --padding: 4.5rem 1.5rem 5.6rem 1.5rem;
+   padding: var(--padding);
+   background: linear-gradient(rgb(0 ,0 ,0,0), rgba(1, 86, 1, 0.3) 20%,rgb(31, 78, 68) 100%);
+   transform: translateY(95%);
+   transition: transform 500ms ease;
+   transition-delay: 500ms;
+}
+
+.presalecard-content p
+{
+   padding: 20px 0px;
+}
+
+@media (hover) {
+   .presalecard-content {
+      transform: translateY(65%);
+      transition: transform 500ms ease;
+   }
+
+   .presalecard:hover .presalecard-content,
+   .presalecard:focus-within .presalecard-content {
+      transform: translateY(0);
+      transition-delay: 500ms;
+   }
+
+   .presalecard-content .presalecard:focus-within {
+      transition-duration: 0ms;
+   }
+
+   .presalecard-title::after {
+      transform: scaleX(0)
+   }
+
+}
+
+.presalecard:hover .presalecard-content,
+.presalecard:focus-within .presalecard-content {
+   transform: translateY(0);
+   transition-delay: 500ms;
+}
+
+.presalecard-content .presalecard:focus-within {
+   transition-duration: 0ms;
+}
+
+.presalecard-title {
+   font-weight: 200;
+   position: relative;
+   width: max-content;
+   font-size: 36px;
+}
+
+.presalecard-title::after {
+   content: "";
+   position: absolute;
+   height: 4px;
+   left: calc(var(--padding)* -1);
+   bottom: -2px;
+   width: calc(100% + var(--padding));
+   background: rgb(31, 78, 68);
+   transform: scale(0);
+   transform-origin: left;
+   transition: transform 0.9s ease;
+}
+
+.presalecard:hover,
+.presalecard:focus-within {
+   transform: scale(1.05);
+}
+
+.presalecard:hover .presalecard-title::after {
+   transform: scaleX(1);
+}
+
+.presalecard-body {
+   color: rgb(255 255 255 / 0.8);
+}
+
+.presalecard-button
+/* кнопка и ее свойства*/
+   {
+   /* upp word */
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   cursor: pointer;
+   display: grid;
+   text-decoration: none;
+   color: rgb(31, 78, 68);
+   background-color: white;
+   /* padding: 0.5em 1.25em; */
+   border-radius: 0.25em;
+   /* радиус кнопки, чтобы округлить*/
+   width: 100%;
+   height: 50px;
+   text-align: center;
+   align-items: center;
+}
+
+.button:hover,
+.button:focus {
+   background-color: rgb(31, 78, 68);
+}
+
+@media (prefers-reduced-motion: reduce) {
+   * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      animation-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+   }
+}
