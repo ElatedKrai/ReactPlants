@@ -34,5 +34,11 @@
    font-size: 26px;
 }
 
-.cards{display: flex;
+.cards
+{display: flex;
 justify-content:space-around;}
+
+.none-plants
+{
+   font-size: 30px;
+}

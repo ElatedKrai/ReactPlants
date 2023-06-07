@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './SectionTwoStyle.css'
 import Card from '../Card/Card'
+import { plants } from '../Card/data/plants.data'
+
+
 export class SectionTwo extends Component {
   render() {
     return (
@@ -9,16 +12,20 @@ export class SectionTwo extends Component {
              <header className='header-section-two'>
                 <h2 className="title-features">Features</h2>
                 <a className='ViewAll' href=''> View All</a>
-          </header>
+            </header>
         </div>
         <div className='container'>
           <div className='cards'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-        </div>
-      </div>
+            {/* check information, massive about plants */}
+            {plants.length ? (
+              <Card key={plants[0].id} plant={plants[0]} />)
+              // else, if there is no plants, show this message
+              : (
+                <div className='none-plants'>
+                  <h2>No plants in the shop :(</h2>
+               </div>)}
+          </div>
+       </div>
       </div>
     )
   }
