@@ -4,8 +4,7 @@ import Card from '../Card/Card'
 import { plants } from '../Card/data/plants.data'
 import Search from '../SearchPanel/SearchPanel';
 
-export class SectionTwo extends Component {
-  render() {
+function SectionTwo(){
     return (
        <div className='section-two'>
           <div className='container'>
@@ -30,6 +29,5 @@ export class SectionTwo extends Component {
       </div>
     )
   }
-}
 
 export default SectionTwo

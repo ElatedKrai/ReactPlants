@@ -18,10 +18,10 @@ function Card(props) {
               <div className='card__pit__leftside'>
                 <p style={{paddingBottom:'15px'}}>Pot color:</p>
                  {/* dot color import { connect } from 'react-redux' */}
-                <span class="dot" style={{backgroundColor:'#39362E'}}></span>
-                <span class="dot" style={{backgroundColor:'#F3A195'}}></span>
-                <span class="dot" style={{backgroundColor:'#EFEAE6'}}></span>
-                <span class="dot" style={{backgroundColor:'#C38364'}}></span>
+                <span className="dot" style={{backgroundColor:'#39362E'}}></span>
+                <span className="dot" style={{backgroundColor:'#F3A195'}}></span>
+                <span className="dot" style={{backgroundColor:'#EFEAE6'}}></span>
+                <span className="dot" style={{backgroundColor:'#C38364'}}></span>
               </div>
               <div className='card__pit__rightside'>
                 <div className='card__pit__rightside__button'>
