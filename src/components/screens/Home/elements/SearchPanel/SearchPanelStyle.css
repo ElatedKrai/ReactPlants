@@ -1,0 +1,49 @@
+.searchpanel
+{
+      display: flex;
+      width: 70%;
+}
+
+.section-three
+{
+      background-color: #F3FFFC;
+      padding: 50px 0;
+      text-align: center;
+}
+
+.searchpanel__search
+{
+   width: 100%;
+   border: #004F44 1px solid;
+   font-family: "Raleway", sans-serif;
+   height: 60px;
+   font-size: 20px;
+   margin-right: 20px;
+   padding-left: 20px;
+   letter-spacing: 1.5px;
+}
+
+.section-three-search:placeholder-shown
+{
+      padding-left: 20px;
+      font-size: 20px;
+      font-family: "Raleway", sans-serif;
+      letter-spacing: .5px;
+}
+
+.search_button button
+{
+      border: none;
+      height: 63px;
+      width: 60px;
+      background-color: #004F44;
+}
+
+.image__search__button
+{
+      padding: 15px; 
+      height: 28px;
+      width: 28px;
+      position: absolute;
+}
+

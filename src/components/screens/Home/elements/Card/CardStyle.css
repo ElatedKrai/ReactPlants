@@ -48,6 +48,18 @@
    padding: 10px;
 }
 
+.card__pit__rightside__button__buy, .card__pit__rightside__button__buy button
+{
+   border: none;
+   background-color: #004F44;
+   color: white;
+   padding: 10px 20px;
+   border-radius: 5px;
+   /* put to the bottom */
+   margin-top: 20px;
+
+}
+
 .dot {
   margin: 2px;
   height: 20px;

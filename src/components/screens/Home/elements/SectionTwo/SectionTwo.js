@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './SectionTwoStyle.css'
 import Card from '../Card/Card'
 import { plants } from '../Card/data/plants.data'
-
+import Search from '../SearchPanel/SearchPanel';
 
 export class SectionTwo extends Component {
   render() {
@@ -10,7 +10,8 @@ export class SectionTwo extends Component {
        <div className='section-two'>
           <div className='container'>
              <header className='header-section-two'>
-                <h2 className="title-features">Features</h2>
+            <h2 className="title-features">Features</h2>
+            <Search />
                 <a className='ViewAll' href=''> View All</a>
             </header>
         </div>

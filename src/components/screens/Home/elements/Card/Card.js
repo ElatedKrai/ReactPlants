@@ -25,7 +25,7 @@ function Card(props) {
               </div>
               <div className='card__pit__rightside'>
                 <div className='card__pit__rightside__button'>
-                  <button className='card__pit__rightside__button__buy'>Buy</button>
+                  <button className='card__pit__rightside__button__buy'>Add to Cart</button>
                 </div>
               </div>
             </div> 
