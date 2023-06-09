@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CardStyle.css'
-import { plants }  from './data/plants.data.js'
+import { plants } from '../../../../data/plants.data.js';
 
 function Card(props) {
     return (

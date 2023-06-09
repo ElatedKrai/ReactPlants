@@ -1,17 +1,16 @@
-import React, { Component } from 'react'
 import './SectionTwoStyle.css'
 import Card from '../Card/Card'
-import { plants } from '../Card/data/plants.data'
+import { plants } from '../../../../data/plants.data.js';
 import Search from '../SearchPanel/SearchPanel';
 
 function SectionTwo(){
     return (
        <div className='section-two'>
           <div className='container'>
-             <header className='header-section-two'>
-            <h2 className="title-features">Features</h2>
+             <header className='section__header'>
+            <h2>Features</h2>
             <Search />
-                <a className='ViewAll' href=''> View All</a>
+                <a className='ViewAll' href='home'> View All</a>
             </header>
         </div>
         <div className='container'>
